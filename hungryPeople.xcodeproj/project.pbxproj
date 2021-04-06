@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7880DF278DCC46076F1BC6CE /* Pods_hungryPeople.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80152C290B98CEB3E90D2067 /* Pods_hungryPeople.framework */; };
 		D2655090261CF14400994C4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D265508F261CF14400994C4F /* AppDelegate.swift */; };
 		D2655092261CF14400994C4F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2655091261CF14400994C4F /* SceneDelegate.swift */; };
 		D2655094261CF14400994C4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2655093261CF14400994C4F /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		80152C290B98CEB3E90D2067 /* Pods_hungryPeople.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hungryPeople.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6A9341CF168D17AAAE664A1 /* Pods-hungryPeople.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hungryPeople.debug.xcconfig"; path = "Target Support Files/Pods-hungryPeople/Pods-hungryPeople.debug.xcconfig"; sourceTree = "<group>"; };
 		D265508C261CF14400994C4F /* hungryPeople.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hungryPeople.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D265508F261CF14400994C4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2655091261CF14400994C4F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		D2655098261CF14700994C4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D265509B261CF14700994C4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D265509D261CF14700994C4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE7BA0B8809C8C38F8105957 /* Pods-hungryPeople.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hungryPeople.release.xcconfig"; path = "Target Support Files/Pods-hungryPeople/Pods-hungryPeople.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7880DF278DCC46076F1BC6CE /* Pods_hungryPeople.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2325AF920C3270FB0D259E62 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80152C290B98CEB3E90D2067 /* Pods_hungryPeople.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7CFEA38512C8D1B39722571B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B6A9341CF168D17AAAE664A1 /* Pods-hungryPeople.debug.xcconfig */,
+				DE7BA0B8809C8C38F8105957 /* Pods-hungryPeople.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D2655083261CF14400994C4F = {
 			isa = PBXGroup;
 			children = (
 				D265508E261CF14400994C4F /* hungryPeople */,
 				D265508D261CF14400994C4F /* Products */,
+				7CFEA38512C8D1B39722571B /* Pods */,
+				2325AF920C3270FB0D259E62 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D26550A0261CF14700994C4F /* Build configuration list for PBXNativeTarget "hungryPeople" */;
 			buildPhases = (
+				9B7562710454EDD40849E4F3 /* [CP] Check Pods Manifest.lock */,
 				D2655088261CF14400994C4F /* Sources */,
 				D2655089261CF14400994C4F /* Frameworks */,
 				D265508A261CF14400994C4F /* Resources */,
+				A5DF74564727B865D20444B6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +157,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9B7562710454EDD40849E4F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hungryPeople-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5DF74564727B865D20444B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hungryPeople/Pods-hungryPeople-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hungryPeople/Pods-hungryPeople-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hungryPeople/Pods-hungryPeople-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D2655088261CF14400994C4F /* Sources */ = {
@@ -283,6 +351,7 @@
 		};
 		D26550A1261CF14700994C4F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6A9341CF168D17AAAE664A1 /* Pods-hungryPeople.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +371,7 @@
 		};
 		D26550A2261CF14700994C4F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE7BA0B8809C8C38F8105957 /* Pods-hungryPeople.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
