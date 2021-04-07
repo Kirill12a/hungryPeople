@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7880DF278DCC46076F1BC6CE /* Pods_hungryPeople.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80152C290B98CEB3E90D2067 /* Pods_hungryPeople.framework */; };
+		D23EDF94261E538A000A5776 /* ReserveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23EDF93261E538A000A5776 /* ReserveViewController.swift */; };
 		D2655090261CF14400994C4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D265508F261CF14400994C4F /* AppDelegate.swift */; };
 		D2655092261CF14400994C4F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2655091261CF14400994C4F /* SceneDelegate.swift */; };
 		D2655094261CF14400994C4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2655093261CF14400994C4F /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		80152C290B98CEB3E90D2067 /* Pods_hungryPeople.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hungryPeople.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6A9341CF168D17AAAE664A1 /* Pods-hungryPeople.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hungryPeople.debug.xcconfig"; path = "Target Support Files/Pods-hungryPeople/Pods-hungryPeople.debug.xcconfig"; sourceTree = "<group>"; };
+		D23EDF93261E538A000A5776 /* ReserveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveViewController.swift; sourceTree = "<group>"; };
 		D265508C261CF14400994C4F /* hungryPeople.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hungryPeople.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D265508F261CF14400994C4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2655091261CF14400994C4F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,51 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D23EDF83261E43D1000A5776 /* 1_screen_"About us" */ = {
+			isa = PBXGroup;
+			children = (
+				D2655093261CF14400994C4F /* ViewController.swift */,
+				D23EDF92261E536C000A5776 /* ReserveTable */,
+			);
+			path = "1_screen_\"About us\"";
+			sourceTree = "<group>";
+		};
+		D23EDF84261E440B000A5776 /* 2_screen_"Meny" */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "2_screen_\"Meny\"";
+			sourceTree = "<group>";
+		};
+		D23EDF85261E441F000A5776 /* 3_screen_"Contacts" */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "3_screen_\"Contacts\"";
+			sourceTree = "<group>";
+		};
+		D23EDF86261E4454000A5776 /* 4_screen_"Map" */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "4_screen_\"Map\"";
+			sourceTree = "<group>";
+		};
+		D23EDF88261E4493000A5776 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D23EDF92261E536C000A5776 /* ReserveTable */ = {
+			isa = PBXGroup;
+			children = (
+				D23EDF93261E538A000A5776 /* ReserveViewController.swift */,
+			);
+			path = ReserveTable;
+			sourceTree = "<group>";
+		};
 		D2655083261CF14400994C4F = {
 			isa = PBXGroup;
 			children = (
@@ -80,9 +127,13 @@
 		D265508E261CF14400994C4F /* hungryPeople */ = {
 			isa = PBXGroup;
 			children = (
-				D265508F261CF14400994C4F /* AppDelegate.swift */,
 				D2655091261CF14400994C4F /* SceneDelegate.swift */,
-				D2655093261CF14400994C4F /* ViewController.swift */,
+				D265508F261CF14400994C4F /* AppDelegate.swift */,
+				D23EDF88261E4493000A5776 /* Main */,
+				D23EDF86261E4454000A5776 /* 4_screen_"Map" */,
+				D23EDF85261E441F000A5776 /* 3_screen_"Contacts" */,
+				D23EDF84261E440B000A5776 /* 2_screen_"Meny" */,
+				D23EDF83261E43D1000A5776 /* 1_screen_"About us" */,
 				D2655095261CF14400994C4F /* Main.storyboard */,
 				D2655098261CF14700994C4F /* Assets.xcassets */,
 				D265509A261CF14700994C4F /* LaunchScreen.storyboard */,
@@ -206,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2655094261CF14400994C4F /* ViewController.swift in Sources */,
+				D23EDF94261E538A000A5776 /* ReserveViewController.swift in Sources */,
 				D2655090261CF14400994C4F /* AppDelegate.swift in Sources */,
 				D2655092261CF14400994C4F /* SceneDelegate.swift in Sources */,
 			);
