@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7880DF278DCC46076F1BC6CE /* Pods_hungryPeople.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80152C290B98CEB3E90D2067 /* Pods_hungryPeople.framework */; };
+		D2167FA2261F7FF800331E1C /* MenyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2167FA1261F7FF800331E1C /* MenyViewController.swift */; };
 		D23EDF94261E538A000A5776 /* ReserveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23EDF93261E538A000A5776 /* ReserveViewController.swift */; };
 		D2655090261CF14400994C4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D265508F261CF14400994C4F /* AppDelegate.swift */; };
 		D2655092261CF14400994C4F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2655091261CF14400994C4F /* SceneDelegate.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		80152C290B98CEB3E90D2067 /* Pods_hungryPeople.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hungryPeople.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6A9341CF168D17AAAE664A1 /* Pods-hungryPeople.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hungryPeople.debug.xcconfig"; path = "Target Support Files/Pods-hungryPeople/Pods-hungryPeople.debug.xcconfig"; sourceTree = "<group>"; };
+		D2167FA1261F7FF800331E1C /* MenyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenyViewController.swift; sourceTree = "<group>"; };
 		D23EDF93261E538A000A5776 /* ReserveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveViewController.swift; sourceTree = "<group>"; };
 		D265508C261CF14400994C4F /* hungryPeople.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hungryPeople.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D265508F261CF14400994C4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,41 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D2167FA8261FA3CB00331E1C /* Soupe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Soupe;
+			sourceTree = "<group>";
+		};
+		D2167FA9261FA3DF00331E1C /* Pizza */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pizza;
+			sourceTree = "<group>";
+		};
+		D2167FAA261FA3E800331E1C /* Drinks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Drinks;
+			sourceTree = "<group>";
+		};
+		D2167FAB261FA3F300331E1C /* Pasta */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pasta;
+			sourceTree = "<group>";
+		};
+		D2167FAC261FA3FC00331E1C /* Desert */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Desert;
+			sourceTree = "<group>";
+		};
 		D23EDF83261E43D1000A5776 /* 1_screen_"About us" */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +110,12 @@
 		D23EDF84261E440B000A5776 /* 2_screen_"Meny" */ = {
 			isa = PBXGroup;
 			children = (
+				D2167FA1261F7FF800331E1C /* MenyViewController.swift */,
+				D2167FAC261FA3FC00331E1C /* Desert */,
+				D2167FAB261FA3F300331E1C /* Pasta */,
+				D2167FAA261FA3E800331E1C /* Drinks */,
+				D2167FA9261FA3DF00331E1C /* Pizza */,
+				D2167FA8261FA3CB00331E1C /* Soupe */,
 			);
 			path = "2_screen_\"Meny\"";
 			sourceTree = "<group>";
@@ -256,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2167FA2261F7FF800331E1C /* MenyViewController.swift in Sources */,
 				D2655094261CF14400994C4F /* ViewController.swift in Sources */,
 				D23EDF94261E538A000A5776 /* ReserveViewController.swift in Sources */,
 				D2655090261CF14400994C4F /* AppDelegate.swift in Sources */,

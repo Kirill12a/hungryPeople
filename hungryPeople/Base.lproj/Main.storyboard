@@ -11,7 +11,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="hungryPeople" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -63,8 +62,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="about" id="tCh-oT-oNl"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-657.97101449275362" y="521.65178571428567"/>
+            <point key="canvasLocation" x="226" y="515"/>
         </scene>
         <!--Reserve View Controller-->
         <scene sceneID="xtA-C5-3F6">
@@ -106,7 +106,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6w2-zZ-PUx">
                                 <rect key="frame" x="216" y="341" width="140" height="37"/>
@@ -160,7 +160,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RjH-4r-IUr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-828.98550724637687" y="1253.5714285714284"/>
+            <point key="canvasLocation" x="225" y="1233"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="KNd-qa-C4U">
@@ -168,21 +168,118 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ZzM-hC-9tU" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eAH-4C-AEk">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="CvZ-Jg-sTg"/>
+                        <segue destination="zyk-JJ-mdM" kind="relationship" relationship="viewControllers" id="KFA-Ct-BNX"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mjd-6b-Plr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1257" y="-207"/>
         </scene>
+        <!--Meny-->
+        <scene sceneID="rX4-bq-9eG">
+            <objects>
+                <viewController id="YpP-u1-63Q" customClass="MenyViewController" customModule="hungryPeople" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oSY-q7-MUg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mB4-Cs-e7u">
+                                <rect key="frame" x="30" y="141" width="181" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="SOUPE" image="soup"/>
+                                <connections>
+                                    <action selector="soupeBT:" destination="YpP-u1-63Q" eventType="touchUpInside" id="NU6-Ep-maz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUS-ic-umz">
+                                <rect key="frame" x="203" y="537" width="181" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="PASTA" image="pasta"/>
+                                <connections>
+                                    <action selector="pastaBT:" destination="YpP-u1-63Q" eventType="touchUpInside" id="yYy-UY-zxR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i1r-UO-YFo">
+                                <rect key="frame" x="30" y="669" width="181" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="DESERT" image="ice cream"/>
+                                <connections>
+                                    <action selector="desertBT:" destination="YpP-u1-63Q" eventType="touchUpInside" id="KOK-lQ-1qC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAz-uL-r1T">
+                                <rect key="frame" x="30" y="405" width="181" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="DRINKS" image="drinks"/>
+                                <connections>
+                                    <action selector="drinksBT:" destination="YpP-u1-63Q" eventType="touchUpInside" id="OrJ-Ap-eRw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzP-P8-KQj">
+                                <rect key="frame" x="203" y="273" width="181" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="PIZZA" image="pizza2"/>
+                                <connections>
+                                    <action selector="pizzaBT:" destination="YpP-u1-63Q" eventType="touchUpInside" id="hNu-fg-c8C"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yGM-nF-Xz8"/>
+                        <color key="backgroundColor" red="1" green="0.5725490196078431" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Meny" id="hKa-oz-V2A"/>
+                    <connections>
+                        <outlet property="desertV" destination="i1r-UO-YFo" id="u18-Hp-IHO"/>
+                        <outlet property="drinksV" destination="FAz-uL-r1T" id="xPZ-Jd-yTI"/>
+                        <outlet property="pastaV" destination="XUS-ic-umz" id="GV2-xF-a0l"/>
+                        <outlet property="pizzaV" destination="vzP-P8-KQj" id="uh3-zU-hZP"/>
+                        <outlet property="soupeV" destination="mB4-Cs-e7u" id="J0O-KD-IcF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a8F-se-c33" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1257" y="1225"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7xb-y2-DnJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zyk-JJ-mdM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="menu" id="StR-VX-RGz"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Euc-aW-ULa">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YpP-u1-63Q" kind="relationship" relationship="rootViewController" id="dEo-Ua-UkI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jjy-UA-JZ7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1256.521739130435" y="514.95535714285711"/>
+        </scene>
     </scenes>
     <resources>
         <image name="about" width="24" height="24"/>
         <image name="about us" width="1150" height="1150"/>
+        <image name="drinks" width="64" height="64"/>
+        <image name="ice cream" width="64" height="64"/>
+        <image name="menu" width="32" height="32"/>
+        <image name="pasta" width="96" height="96"/>
+        <image name="pizza2" width="96" height="96"/>
+        <image name="soup" width="96" height="96"/>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
