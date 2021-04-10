@@ -16,6 +16,16 @@
 		D2655097261CF14400994C4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2655095261CF14400994C4F /* Main.storyboard */; };
 		D2655099261CF14700994C4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2655098261CF14700994C4F /* Assets.xcassets */; };
 		D265509C261CF14700994C4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D265509A261CF14700994C4F /* LaunchScreen.storyboard */; };
+		D2F0A10B2620DFBD005D8B1B /* SoupeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0A10A2620DFBD005D8B1B /* SoupeCollectionViewController.swift */; };
+		D2F0A10E2620DFED005D8B1B /* SoupeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0A10D2620DFED005D8B1B /* SoupeCollectionViewCell.swift */; };
+		D2F0A1112620F93E005D8B1B /* PizzaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0A1102620F93E005D8B1B /* PizzaCollectionViewCell.swift */; };
+		D2F0A1142620F94D005D8B1B /* PizzaCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0A1132620F94D005D8B1B /* PizzaCollectionViewController.swift */; };
+		D2F0A11726220D8C005D8B1B /* DrinksCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0A11626220D8C005D8B1B /* DrinksCollectionViewController.swift */; };
+		D2F0A11A26220D99005D8B1B /* DrinksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0A11926220D99005D8B1B /* DrinksCollectionViewCell.swift */; };
+		D2F0A11D26223B82005D8B1B /* PastaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0A11C26223B82005D8B1B /* PastaCollectionViewCell.swift */; };
+		D2F0A12026223B90005D8B1B /* PastaCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0A11F26223B90005D8B1B /* PastaCollectionViewController.swift */; };
+		D2F0A12326224804005D8B1B /* DesertCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0A12226224804005D8B1B /* DesertCollectionViewController.swift */; };
+		D2F0A1262622484F005D8B1B /* DesertCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0A1252622484F005D8B1B /* DesertCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +41,16 @@
 		D2655098261CF14700994C4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D265509B261CF14700994C4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D265509D261CF14700994C4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2F0A10A2620DFBD005D8B1B /* SoupeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoupeCollectionViewController.swift; sourceTree = "<group>"; };
+		D2F0A10D2620DFED005D8B1B /* SoupeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoupeCollectionViewCell.swift; sourceTree = "<group>"; };
+		D2F0A1102620F93E005D8B1B /* PizzaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaCollectionViewCell.swift; sourceTree = "<group>"; };
+		D2F0A1132620F94D005D8B1B /* PizzaCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaCollectionViewController.swift; sourceTree = "<group>"; };
+		D2F0A11626220D8C005D8B1B /* DrinksCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksCollectionViewController.swift; sourceTree = "<group>"; };
+		D2F0A11926220D99005D8B1B /* DrinksCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksCollectionViewCell.swift; sourceTree = "<group>"; };
+		D2F0A11C26223B82005D8B1B /* PastaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastaCollectionViewCell.swift; sourceTree = "<group>"; };
+		D2F0A11F26223B90005D8B1B /* PastaCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastaCollectionViewController.swift; sourceTree = "<group>"; };
+		D2F0A12226224804005D8B1B /* DesertCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesertCollectionViewController.swift; sourceTree = "<group>"; };
+		D2F0A1252622484F005D8B1B /* DesertCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesertCollectionViewCell.swift; sourceTree = "<group>"; };
 		DE7BA0B8809C8C38F8105957 /* Pods-hungryPeople.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hungryPeople.release.xcconfig"; path = "Target Support Files/Pods-hungryPeople/Pods-hungryPeople.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +86,8 @@
 		D2167FA8261FA3CB00331E1C /* Soupe */ = {
 			isa = PBXGroup;
 			children = (
+				D2F0A10A2620DFBD005D8B1B /* SoupeCollectionViewController.swift */,
+				D2F0A10D2620DFED005D8B1B /* SoupeCollectionViewCell.swift */,
 			);
 			path = Soupe;
 			sourceTree = "<group>";
@@ -73,6 +95,8 @@
 		D2167FA9261FA3DF00331E1C /* Pizza */ = {
 			isa = PBXGroup;
 			children = (
+				D2F0A1102620F93E005D8B1B /* PizzaCollectionViewCell.swift */,
+				D2F0A1132620F94D005D8B1B /* PizzaCollectionViewController.swift */,
 			);
 			path = Pizza;
 			sourceTree = "<group>";
@@ -80,6 +104,8 @@
 		D2167FAA261FA3E800331E1C /* Drinks */ = {
 			isa = PBXGroup;
 			children = (
+				D2F0A11626220D8C005D8B1B /* DrinksCollectionViewController.swift */,
+				D2F0A11926220D99005D8B1B /* DrinksCollectionViewCell.swift */,
 			);
 			path = Drinks;
 			sourceTree = "<group>";
@@ -87,6 +113,8 @@
 		D2167FAB261FA3F300331E1C /* Pasta */ = {
 			isa = PBXGroup;
 			children = (
+				D2F0A11C26223B82005D8B1B /* PastaCollectionViewCell.swift */,
+				D2F0A11F26223B90005D8B1B /* PastaCollectionViewController.swift */,
 			);
 			path = Pasta;
 			sourceTree = "<group>";
@@ -94,6 +122,8 @@
 		D2167FAC261FA3FC00331E1C /* Desert */ = {
 			isa = PBXGroup;
 			children = (
+				D2F0A12226224804005D8B1B /* DesertCollectionViewController.swift */,
+				D2F0A1252622484F005D8B1B /* DesertCollectionViewCell.swift */,
 			);
 			path = Desert;
 			sourceTree = "<group>";
@@ -300,10 +330,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2167FA2261F7FF800331E1C /* MenyViewController.swift in Sources */,
+				D2F0A10B2620DFBD005D8B1B /* SoupeCollectionViewController.swift in Sources */,
+				D2F0A12026223B90005D8B1B /* PastaCollectionViewController.swift in Sources */,
+				D2F0A12326224804005D8B1B /* DesertCollectionViewController.swift in Sources */,
 				D2655094261CF14400994C4F /* ViewController.swift in Sources */,
+				D2F0A1142620F94D005D8B1B /* PizzaCollectionViewController.swift in Sources */,
+				D2F0A1262622484F005D8B1B /* DesertCollectionViewCell.swift in Sources */,
 				D23EDF94261E538A000A5776 /* ReserveViewController.swift in Sources */,
 				D2655090261CF14400994C4F /* AppDelegate.swift in Sources */,
+				D2F0A1112620F93E005D8B1B /* PizzaCollectionViewCell.swift in Sources */,
 				D2655092261CF14400994C4F /* SceneDelegate.swift in Sources */,
+				D2F0A11D26223B82005D8B1B /* PastaCollectionViewCell.swift in Sources */,
+				D2F0A10E2620DFED005D8B1B /* SoupeCollectionViewCell.swift in Sources */,
+				D2F0A11726220D8C005D8B1B /* DrinksCollectionViewController.swift in Sources */,
+				D2F0A11A26220D99005D8B1B /* DrinksCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

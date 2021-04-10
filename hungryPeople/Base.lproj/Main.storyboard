@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -64,7 +65,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="226" y="515"/>
+            <point key="canvasLocation" x="-1059" y="488"/>
         </scene>
         <!--Reserve View Controller-->
         <scene sceneID="xtA-C5-3F6">
@@ -160,7 +161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RjH-4r-IUr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="225" y="1233"/>
+            <point key="canvasLocation" x="-1058" y="1225"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="KNd-qa-C4U">
@@ -195,7 +196,8 @@
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="SOUPE" image="soup"/>
                                 <connections>
-                                    <action selector="soupeBT:" destination="YpP-u1-63Q" eventType="touchUpInside" id="NU6-Ep-maz"/>
+                                    <action selector="soupeBT:" destination="YpP-u1-63Q" eventType="touchUpInside" id="dHo-Hs-Tuj"/>
+                                    <segue destination="0DJ-dk-JHJ" kind="show" id="zFK-rg-Dze"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUS-ic-umz">
@@ -204,7 +206,8 @@
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="PASTA" image="pasta"/>
                                 <connections>
-                                    <action selector="pastaBT:" destination="YpP-u1-63Q" eventType="touchUpInside" id="yYy-UY-zxR"/>
+                                    <action selector="pastaBT:" destination="YpP-u1-63Q" eventType="touchUpInside" id="RZs-em-y0n"/>
+                                    <segue destination="OtZ-xz-PtX" kind="show" id="mAJ-it-lcT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i1r-UO-YFo">
@@ -213,7 +216,8 @@
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="DESERT" image="ice cream"/>
                                 <connections>
-                                    <action selector="desertBT:" destination="YpP-u1-63Q" eventType="touchUpInside" id="KOK-lQ-1qC"/>
+                                    <action selector="desertBT:" destination="YpP-u1-63Q" eventType="touchUpInside" id="Wll-Rv-YVZ"/>
+                                    <segue destination="UqM-hh-AAK" kind="show" id="30h-cq-eTm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAz-uL-r1T">
@@ -222,7 +226,8 @@
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="DRINKS" image="drinks"/>
                                 <connections>
-                                    <action selector="drinksBT:" destination="YpP-u1-63Q" eventType="touchUpInside" id="OrJ-Ap-eRw"/>
+                                    <action selector="drinksBT:" destination="YpP-u1-63Q" eventType="touchUpInside" id="BoS-4C-7N7"/>
+                                    <segue destination="YWZ-lQ-uSN" kind="show" id="Reg-gg-2ab"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzP-P8-KQj">
@@ -231,7 +236,8 @@
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="PIZZA" image="pizza2"/>
                                 <connections>
-                                    <action selector="pizzaBT:" destination="YpP-u1-63Q" eventType="touchUpInside" id="hNu-fg-c8C"/>
+                                    <action selector="pizzaBT:" destination="YpP-u1-63Q" eventType="touchUpInside" id="6HW-Or-6hi"/>
+                                    <segue destination="D6F-9x-Ona" kind="show" id="5hz-Tt-Dcb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -250,6 +256,383 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a8F-se-c33" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1257" y="1225"/>
+        </scene>
+        <!--Soupe Collection View Controller-->
+        <scene sceneID="hQ8-Q6-Hl8">
+            <objects>
+                <collectionViewController id="0DJ-dk-JHJ" customClass="SoupeCollectionViewController" customModule="hungryPeople" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="SdW-Gb-WKb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="13" minimumInteritemSpacing="13" id="zE7-2P-68M">
+                            <size key="itemSize" width="193" height="233"/>
+                            <size key="estimatedItemSize" width="188" height="233"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="7" minY="15" maxX="7" maxY="15"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="cell" reuseIdentifier="cell" id="Mh9-Qz-PHL" customClass="SoupeCollectionViewCell" customModule="hungryPeople" customModuleProvider="target">
+                                <rect key="frame" x="7" y="15" width="193" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="tj1-pM-WFq">
+                                    <rect key="frame" x="0.0" y="0.0" width="193" height="230"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="Cell" image="31" translatesAutoresizingMaskIntoConstraints="NO" id="FEn-Pu-Gjc">
+                                            <rect key="frame" x="0.0" y="32" width="193" height="137"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Том Ям" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgz-R7-8dg">
+                                            <rect key="frame" x="0.0" y="0.0" width="193" height="33"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="159" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jm5-cN-cNF">
+                                            <rect key="frame" x="8" y="180" width="76" height="42"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="26"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMC-cq-j8d">
+                                            <rect key="frame" x="134" y="180" width="47" height="42"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" image="tresh"/>
+                                            <connections>
+                                                <action selector="SendProductInTrash:" destination="Mh9-Qz-PHL" eventType="touchUpInside" id="FJL-bL-2EZ"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="193" height="230"/>
+                                <connections>
+                                    <outlet property="SendProductInTrashOutlet" destination="eMC-cq-j8d" id="uOz-F9-VBF"/>
+                                    <outlet property="SoupeImage" destination="FEn-Pu-Gjc" id="XTy-Qf-1Dh"/>
+                                    <outlet property="SoupeName" destination="pgz-R7-8dg" id="wRi-dB-NiT"/>
+                                    <outlet property="SoupePrice" destination="jm5-cN-cNF" id="fsW-7q-Tip"/>
+                                    <outlet property="content" destination="tj1-pM-WFq" id="LD8-A7-dGe"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="0DJ-dk-JHJ" id="g4S-GL-7hH"/>
+                            <outlet property="delegate" destination="0DJ-dk-JHJ" id="x9l-OI-UTf"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="zus-ME-c36"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wmm-lB-ewF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-110.14492753623189" y="1942.6339285714284"/>
+        </scene>
+        <!--Pizza Collection View Controller-->
+        <scene sceneID="p9L-K5-wAZ">
+            <objects>
+                <collectionViewController id="D6F-9x-Ona" customClass="PizzaCollectionViewController" customModule="hungryPeople" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="U6c-rg-f0M">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="EVc-Bc-d8L">
+                            <size key="itemSize" width="179" height="140"/>
+                            <size key="estimatedItemSize" width="190" height="300"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="15" minY="11" maxX="8" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="cell2" reuseIdentifier="celll23" id="GFe-7J-xIf" customClass="PizzaCollectionViewCell" customModule="hungryPeople" customModuleProvider="target">
+                                <rect key="frame" x="15" y="11" width="190" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="aIl-cw-kp9">
+                                    <rect key="frame" x="0.0" y="0.0" width="190" height="300"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Пицца Домащняя" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBg-6y-uPh">
+                                            <rect key="frame" x="0.0" y="6" width="190" height="43"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="dHT-ZC-t7v">
+                                            <rect key="frame" x="0.0" y="48" width="190" height="141"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ZJE-7X-3ZJ">
+                                            <rect key="frame" x="0.0" y="195" width="190" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="30Cm"/>
+                                                <segment title="38Cm"/>
+                                                <segment title="45Cm"/>
+                                            </segments>
+                                            <connections>
+                                                <action selector="PizzaAddSizeSegment:" destination="GFe-7J-xIf" eventType="valueChanged" id="HMa-h3-C8T"/>
+                                            </connections>
+                                        </segmentedControl>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BE1-0B-KOu">
+                                            <rect key="frame" x="119" y="232" width="64" height="64"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" image="tresh"/>
+                                            <connections>
+                                                <action selector="PizzaAddBasket:" destination="GFe-7J-xIf" eventType="touchUpInside" id="ZFp-5a-xfD"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="360" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWI-2h-H0g">
+                                            <rect key="frame" x="8" y="234" width="100" height="58"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="26"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="190" height="300"/>
+                                <connections>
+                                    <outlet property="PizzaAddTrash" destination="BE1-0B-KOu" id="vQ4-RV-LL2"/>
+                                    <outlet property="PizzaImage" destination="dHT-ZC-t7v" id="CvE-5G-lFu"/>
+                                    <outlet property="PizzaName" destination="FBg-6y-uPh" id="jZ3-5Z-vZf"/>
+                                    <outlet property="PizzaPrice" destination="ZWI-2h-H0g" id="Uke-eu-OIB"/>
+                                    <outlet property="PizzaSegCont" destination="ZJE-7X-3ZJ" id="bjd-xF-TaA"/>
+                                    <outlet property="PizzaView" destination="aIl-cw-kp9" id="geh-qf-IrK"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="D6F-9x-Ona" id="RDf-ep-Lkg"/>
+                            <outlet property="delegate" destination="D6F-9x-Ona" id="G46-FK-TAU"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="2br-Ea-Zox"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mmj-dr-laE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="728.98550724637687" y="1942.6339285714284"/>
+        </scene>
+        <!--Drinks Collection View Controller-->
+        <scene sceneID="rHc-HU-BCw">
+            <objects>
+                <collectionViewController id="YWZ-lQ-uSN" customClass="DrinksCollectionViewController" customModule="hungryPeople" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="pcm-iB-9uQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" minimumInteritemSpacing="12" id="XSP-7t-Cxg">
+                            <size key="itemSize" width="194" height="317"/>
+                            <size key="estimatedItemSize" width="193" height="317"/>
+                            <size key="headerReferenceSize" width="0.0" height="7"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="4" minY="0.0" maxX="2" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell3" id="Nxs-WT-UrQ" customClass="DrinksCollectionViewCell" customModule="hungryPeople" customModuleProvider="target">
+                                <rect key="frame" x="4" y="7" width="194" height="317"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="4ih-U9-gEn">
+                                    <rect key="frame" x="0.0" y="0.0" width="194" height="317"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Coca-Cola" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DY9-1A-IW3">
+                                            <rect key="frame" x="0.0" y="0.0" width="193" height="40"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BonAqua, негаз" translatesAutoresizingMaskIntoConstraints="NO" id="UAv-R5-LiS">
+                                            <rect key="frame" x="0.0" y="41" width="193" height="199"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="50P" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyE-R8-Oqe">
+                                            <rect key="frame" x="8" y="251" width="103" height="61"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="26"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7b-wX-jsw">
+                                            <rect key="frame" x="126" y="245" width="59" height="64"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Button" image="tresh"/>
+                                            <connections>
+                                                <action selector="DrinksPushDataAction:" destination="Nxs-WT-UrQ" eventType="touchUpInside" id="ztz-ei-uww"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="194" height="317"/>
+                                <connections>
+                                    <outlet property="DrinksImage" destination="UAv-R5-LiS" id="tEj-9Y-zLp"/>
+                                    <outlet property="DrinksName" destination="DY9-1A-IW3" id="sBZ-Hu-5J7"/>
+                                    <outlet property="DrinksPrice" destination="cyE-R8-Oqe" id="QqJ-hU-OlX"/>
+                                    <outlet property="DrinksPushButtonOutlet" destination="C7b-wX-jsw" id="FGJ-YL-jra"/>
+                                    <outlet property="ViewDrinks" destination="4ih-U9-gEn" id="XI9-it-Fd0"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ZPV-9A-8Na">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="7"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="YWZ-lQ-uSN" id="fH7-6L-xXJ"/>
+                            <outlet property="delegate" destination="YWZ-lQ-uSN" id="7bn-DU-XrZ"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="vRD-4v-K3b"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l9b-68-T3G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1462.3188405797102" y="1942.6339285714284"/>
+        </scene>
+        <!--Pasta Collection View Controller-->
+        <scene sceneID="hPp-cH-wPT">
+            <objects>
+                <collectionViewController id="OtZ-xz-PtX" customClass="PastaCollectionViewController" customModule="hungryPeople" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="B9n-KX-Mub">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ahp-Dc-Jyn">
+                            <size key="itemSize" width="194" height="245"/>
+                            <size key="estimatedItemSize" width="194" height="313"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="4" minY="0.0" maxX="4" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell4" id="7YZ-OJ-EGn" customClass="PastaCollectionViewCell" customModule="hungryPeople" customModuleProvider="target">
+                                <rect key="frame" x="4" y="0.0" width="194" height="313"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gZ0-S9-G1H">
+                                    <rect key="frame" x="0.0" y="0.0" width="194" height="313"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Удон с креветками" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKX-FM-Vr3">
+                                            <rect key="frame" x="0.0" y="0.0" width="192" height="63"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="540" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kte-rV-VTE">
+                                            <rect key="frame" x="8" y="245" width="73" height="63"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="26"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZe-86-AV2">
+                                            <rect key="frame" x="116" y="245" width="64" height="64"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" image="tresh"/>
+                                            <connections>
+                                                <action selector="PastaPushDataBaseket:" destination="7YZ-OJ-EGn" eventType="touchUpInside" id="3fM-X5-JyE"/>
+                                            </connections>
+                                        </button>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LRb-Ty-qvw">
+                                            <rect key="frame" x="0.0" y="61" width="192" height="167"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="194" height="313"/>
+                                <connections>
+                                    <outlet property="PastaAddBasket" destination="MZe-86-AV2" id="xaN-LB-P8Z"/>
+                                    <outlet property="PastaImage" destination="LRb-Ty-qvw" id="Qs1-J4-cDo"/>
+                                    <outlet property="PastaName" destination="pKX-FM-Vr3" id="Zfx-sh-uYX"/>
+                                    <outlet property="PastaPrice" destination="Kte-rV-VTE" id="f0k-5Y-vSi"/>
+                                    <outlet property="PastaView" destination="gZ0-S9-G1H" id="KjD-1T-Scq"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="OtZ-xz-PtX" id="zP4-Oc-v2o"/>
+                            <outlet property="delegate" destination="OtZ-xz-PtX" id="5LM-90-SWU"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="q61-zQ-kAo"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dnR-K7-bW6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2157.971014492754" y="1942.6339285714284"/>
+        </scene>
+        <!--Desert Collection View Controller-->
+        <scene sceneID="ScK-wC-CCP">
+            <objects>
+                <collectionViewController id="UqM-hh-AAK" customClass="DesertCollectionViewController" customModule="hungryPeople" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="dUo-wz-mwD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZTu-Dd-Iie">
+                            <size key="itemSize" width="196" height="267"/>
+                            <size key="estimatedItemSize" width="196" height="267"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="9" minY="6" maxX="0.0" maxY="3"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell6" id="KWP-to-j9V" customClass="DesertCollectionViewCell" customModule="hungryPeople" customModuleProvider="target">
+                                <rect key="frame" x="9" y="6" width="196" height="267"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="XIP-pm-Stl" customClass="DesertCollectionViewCell" customModule="hungryPeople" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="196" height="267"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dio-6b-a2E">
+                                            <rect key="frame" x="0.0" y="0.0" width="194" height="66"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="432" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jC0-W7-H6x">
+                                            <rect key="frame" x="8" y="207" width="85" height="52"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixd-Iv-Gej">
+                                            <rect key="frame" x="137" y="207" width="56" height="52"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" image="tresh"/>
+                                            <connections>
+                                                <action selector="DesertButtonAction:" destination="KWP-to-j9V" eventType="touchUpInside" id="jXh-56-6zE"/>
+                                            </connections>
+                                        </button>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="47" translatesAutoresizingMaskIntoConstraints="NO" id="7oz-Wd-XMf">
+                                            <rect key="frame" x="0.0" y="67" width="196" height="133"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="196" height="267"/>
+                                <connections>
+                                    <outlet property="DesertButtonOutlet" destination="ixd-Iv-Gej" id="iVT-qO-t6B"/>
+                                    <outlet property="DesertImage" destination="7oz-Wd-XMf" id="SEZ-fK-kAe"/>
+                                    <outlet property="DesertName" destination="Dio-6b-a2E" id="cPF-mn-sbw"/>
+                                    <outlet property="DesertPrice" destination="jC0-W7-H6x" id="opC-lr-QFf"/>
+                                    <outlet property="DesertView" destination="XIP-pm-Stl" id="p25-Q0-a0W"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="UqM-hh-AAK" id="IiZ-2n-FaT"/>
+                            <outlet property="delegate" destination="UqM-hh-AAK" id="gas-Pz-jBT"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="qBe-I3-fDz"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZO8-qO-8pU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2860.8695652173915" y="1945.9821428571427"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7xb-y2-DnJ">
@@ -272,6 +655,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="31" width="1300" height="1300"/>
+        <image name="47" width="584" height="584"/>
+        <image name="5" width="584" height="584"/>
+        <image name="BonAqua, негаз" width="584" height="584"/>
         <image name="about" width="24" height="24"/>
         <image name="about us" width="1150" height="1150"/>
         <image name="drinks" width="64" height="64"/>
@@ -280,6 +667,7 @@
         <image name="pasta" width="96" height="96"/>
         <image name="pizza2" width="96" height="96"/>
         <image name="soup" width="96" height="96"/>
+        <image name="tresh" width="64" height="64"/>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

@@ -46,11 +46,4 @@ class MenyViewController: UIViewController {
     @IBAction func desertBT(_ sender: Any) {
     }
     
-    //https://www.youtube.com/watch?v=ZSqEUFZOIzc
-    
-    
-    
-    
-    
-    
 }
