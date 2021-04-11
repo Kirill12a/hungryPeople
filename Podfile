@@ -8,5 +8,6 @@ target 'hungryPeople' do
 	  # Pods for hungryPeople
 
 	pod 'Spring', :git => 'https://github.com/MengTo/Spring.git'
+	pod 'YandexMapKit'
 
 end
