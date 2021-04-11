@@ -176,6 +176,8 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="CvZ-Jg-sTg"/>
                         <segue destination="zyk-JJ-mdM" kind="relationship" relationship="viewControllers" id="KFA-Ct-BNX"/>
+                        <segue destination="DaQ-Hy-8BJ" kind="relationship" relationship="viewControllers" id="bhY-RN-Bet"/>
+                        <segue destination="niP-6e-JXE" kind="relationship" relationship="viewControllers" id="raX-mz-y3e"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mjd-6b-Plr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -255,7 +257,133 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a8F-se-c33" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1257" y="1225"/>
+            <point key="canvasLocation" x="948" y="1303"/>
+        </scene>
+        <!--Contact View Controller-->
+        <scene sceneID="mcu-UU-Gza">
+            <objects>
+                <viewController id="DaQ-Hy-8BJ" customClass="ContactViewController" customModule="hungryPeople" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d4m-5f-Gtj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Контакты" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alO-qk-0Vr">
+                                <rect key="frame" x="143" y="332" width="129" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ваш номер" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FgQ-qN-fjc">
+                                <rect key="frame" x="276" y="522" width="118" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iBy-r7-54V">
+                                <rect key="frame" x="20" y="522" width="118" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Почта" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Rj-h6-81s">
+                                <rect key="frame" x="148" y="522" width="118" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Сообщение" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bju-wJ-ykS">
+                                <rect key="frame" x="20" y="560" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+79116520825   " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWN-a2-jQW">
+                                <rect key="frame" x="26" y="618" width="191" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehY-LZ-5hh">
+                                <rect key="frame" x="181" y="602" width="213" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Зарезервировать">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="SendDataAction:" destination="DaQ-Hy-8BJ" eventType="touchUpInside" id="xAE-Cg-66F"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="50" translatesAutoresizingMaskIntoConstraints="NO" id="CDr-9Y-WdV">
+                                <rect key="frame" x="20" y="62" width="176" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="51" translatesAutoresizingMaskIntoConstraints="NO" id="Dmw-yW-xlN">
+                                <rect key="frame" x="217" y="62" width="177" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="52" translatesAutoresizingMaskIntoConstraints="NO" id="BWz-6z-VOp">
+                                <rect key="frame" x="20" y="190" width="176" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="53" translatesAutoresizingMaskIntoConstraints="NO" id="zog-bP-sX7">
+                                <rect key="frame" x="217" y="190" width="178" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8n-ZX-DNC">
+                                <rect key="frame" x="204" y="62" width="5" height="248"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.57254901960000004" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJh-Bc-jUS">
+                                <rect key="frame" x="20" y="183" width="374" height="6"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.57254901960000004" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vR4-rS-qO5">
+                                <rect key="frame" x="20" y="383" width="374" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">У нас вы можете забронировать столик для себя любимого или для целой компании. Так же, вы можете оставить заявку на корпоратив или на бронирование целого ресторана. За всеми подробностями на почту указанную ниже. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Y80-pv-ngB"/>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="sendData" id="E9L-fo-QAa"/>
+                    <connections>
+                        <outlet property="EmailTF" destination="2Rj-h6-81s" id="soh-yr-12c"/>
+                        <outlet property="MessageTF" destination="bju-wJ-ykS" id="R0K-0k-gDv"/>
+                        <outlet property="NameTF" destination="iBy-r7-54V" id="mo9-bm-7hQ"/>
+                        <outlet property="PhoneTF" destination="FgQ-qN-fjc" id="k0x-nM-PWb"/>
+                        <outlet property="SendDataOutlet" destination="ehY-LZ-5hh" id="3Fg-kz-A6Y"/>
+                        <outlet property="contactLabel" destination="alO-qk-0Vr" id="FBF-rj-Jxy"/>
+                        <outlet property="descriptionLabel" destination="vR4-rS-qO5" id="bhR-88-EVp"/>
+                        <outlet property="image_1" destination="CDr-9Y-WdV" id="fV5-il-s1z"/>
+                        <outlet property="image_2" destination="Dmw-yW-xlN" id="k0j-yi-yJW"/>
+                        <outlet property="image_3" destination="BWz-6z-VOp" id="5Uw-wm-oQJ"/>
+                        <outlet property="image_4" destination="zog-bP-sX7" id="5Rh-oz-4HK"/>
+                        <outlet property="phoneOrgLabel" destination="kWN-a2-jQW" id="xmj-gS-Hu4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DX7-VE-Aea" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2239.130434782609" y="655.58035714285711"/>
         </scene>
         <!--Soupe Collection View Controller-->
         <scene sceneID="hQ8-Q6-Hl8">
@@ -651,21 +779,68 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jjy-UA-JZ7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1256.521739130435" y="514.95535714285711"/>
+            <point key="canvasLocation" x="949" y="656"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Ev3-hx-4De">
+            <objects>
+                <viewController id="niP-6e-JXE" customClass="MapViewViewController" customModule="hungryPeople" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hOf-UO-lmp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R1W-FC-jBC" customClass="YMKMapView">
+                                <rect key="frame" x="0.0" y="389" width="414" height="406"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="У нас открыт один ресторан в Москве" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSP-xd-ReB">
+                                <rect key="frame" x="20" y="76" width="374" height="147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Вы можете найти нас на карте " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aop-PX-Sjt">
+                                <rect key="frame" x="10" y="244" width="394" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GbB-x4-JHc"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="maps" id="7LM-fn-ghV"/>
+                    <connections>
+                        <outlet property="MapViewOutlet" destination="R1W-FC-jBC" id="vJ4-Wj-Spy"/>
+                        <outlet property="mapView" destination="R1W-FC-jBC" id="D0c-AW-zjY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GV3-od-ay8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3782.608695652174" y="555.80357142857144"/>
         </scene>
     </scenes>
     <resources>
         <image name="31" width="1300" height="1300"/>
         <image name="47" width="584" height="584"/>
         <image name="5" width="584" height="584"/>
+        <image name="50" width="720" height="720"/>
+        <image name="51" width="720" height="720"/>
+        <image name="52" width="720" height="720"/>
+        <image name="53" width="720" height="720"/>
         <image name="BonAqua, негаз" width="584" height="584"/>
         <image name="about" width="24" height="24"/>
         <image name="about us" width="1150" height="1150"/>
         <image name="drinks" width="64" height="64"/>
         <image name="ice cream" width="64" height="64"/>
+        <image name="maps" width="32" height="32"/>
         <image name="menu" width="32" height="32"/>
         <image name="pasta" width="96" height="96"/>
         <image name="pizza2" width="96" height="96"/>
+        <image name="sendData" width="32" height="32"/>
         <image name="soup" width="96" height="96"/>
         <image name="tresh" width="64" height="64"/>
         <systemColor name="secondarySystemBackgroundColor">
@@ -676,6 +851,9 @@
         </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

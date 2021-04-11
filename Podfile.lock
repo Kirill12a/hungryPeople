@@ -1,8 +1,17 @@
 PODS:
   - Spring (1.0.6)
+  - YandexMapKit (3.5.0):
+    - YandexRuntime (= 3.5.0)
+  - YandexRuntime (3.5.0)
 
 DEPENDENCIES:
   - Spring (from `https://github.com/MengTo/Spring.git`)
+  - YandexMapKit
+
+SPEC REPOS:
+  trunk:
+    - YandexMapKit
+    - YandexRuntime
 
 EXTERNAL SOURCES:
   Spring:
@@ -15,7 +24,9 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Spring: 3d113f14575ef79aec9c5f906dfa4f5001c03254
+  YandexMapKit: ecd4b78de34a35df63d066ac299e6fd0fe46d1ba
+  YandexRuntime: 2d55244d06267106cf9b00c25a1e63f72a73b6fd
 
-PODFILE CHECKSUM: dd78116745e00f4cf7f07683cdf593aa7a369b8f
+PODFILE CHECKSUM: 90046a0700e955479e172278a2a9d26ae9397d37
 
 COCOAPODS: 1.10.1
