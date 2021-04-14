@@ -11,21 +11,7 @@ import UIKit
 
 class PastaCollectionViewController: UICollectionViewController {
     
-    var arrayPasta = ["Удон с курицей ","Тяхан с курицей","Соба с курицей","Удон с говядиной","Сомен с курицей","Фунчоза с курицей","Удон со свининой","Удон с креветками","Соба с говядиной","Фунчоза с креветками","Тяхан с говядиной","Сомен с овощами"]
-    var arratPastaImage = [
-        UIImage(named:"20"),
-        UIImage(named:"21"),
-        UIImage(named:"22"),
-        UIImage(named:"23"),
-        UIImage(named:"24"),
-        UIImage(named:"25"),
-        UIImage(named:"26"),
-        UIImage(named:"27"),
-        UIImage(named:"28"),
-        UIImage(named:"29"),
-        UIImage(named:"30"),
-        UIImage(named:"31")
-    ]
+    var arrayPasta = ["Удон с курицей","Тяхан с курицей","Соба с курицей","Удон с говядиной","Сомен с курицей","Фунчоза с курицей","Удон со свининой","Удон с креветками","Соба с говядиной","Фунчоза с креветками","Тяхан с говядиной","Сомен с овощами"]
     
     
     var arrayPastaPrice =  ["319","259","319","369","319","319","349","439","369","439","299","289"]
@@ -71,7 +57,7 @@ class PastaCollectionViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell4", for: indexPath) as! PastaCollectionViewCell
         
         cell.PastaName.text = arrayPasta[indexPath.row]
-        cell.PastaImage.image = arratPastaImage[indexPath.row]
+        cell.PastaImage.image = UIImage(named: arrayPasta[indexPath.row])
         cell.PastaPrice.text = arrayPastaPrice[indexPath.row] + "₽"
         cell.PastaView.layer.borderColor = UIColor.black.cgColor
         cell.PastaView.layer.borderWidth = 3
@@ -79,6 +65,14 @@ class PastaCollectionViewController: UICollectionViewController {
         // Configure the cell
         
         return cell
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vcPasta = storyboard?.instantiateViewController(identifier: "PastaViewController") as? PastaViewController
+        vcPasta?.PIZName = arrayPasta[indexPath.row]
+        vcPasta?.PIZImage = UIImage(named: arrayPasta[indexPath.row])!
+        
+        self.navigationController?.pushViewController(vcPasta!, animated: true)
     }
     
     

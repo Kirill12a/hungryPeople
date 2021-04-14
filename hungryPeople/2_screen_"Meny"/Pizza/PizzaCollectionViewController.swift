@@ -12,9 +12,6 @@ import UIKit
 class PizzaCollectionViewController: UICollectionViewController {
     
     var arrayPizza = ["324","540","542","653","542","753","341","521","521","314","530","526"]
-    var arrayPizzaImage = [UIImage(named: "piizaMeny"),UIImage(named: "2"),UIImage(named: "3"),UIImage(named: "4"),UIImage(named: "5"),UIImage(named: "6"),UIImage(named: "7"),UIImage(named: "8"),UIImage(named: "9"),UIImage(named: "10"),UIImage(named: "11"),UIImage(named: "12")]
-    
-    
     var arrayPizzaName = ["Мексиканская","Додо","Мясная","Ветчина","Маргарита","Гавайская","Сырная","Супемясная","Двойная Пеперони","Пеперони", "Песто","Цезарь"]
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,14 +45,23 @@ class PizzaCollectionViewController: UICollectionViewController {
         // Configure the cell
         
         cell.PizzaName.text = arrayPizzaName[indexPath.row]
-        cell.PizzaImage.image = arrayPizzaImage[indexPath.row]
+        cell.PizzaImage.image = UIImage(named: arrayPizzaName[indexPath.row])
         cell.PizzaPrice.text = arrayPizza[indexPath.row] + "₽"
         cell.PizzaView.layer.borderColor = UIColor.black.cgColor
         cell.PizzaView.layer.borderWidth = 3
-        
-        
-        
+     
         return cell
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let vc = storyboard?.instantiateViewController(identifier: "Pizza_2_ViewController") as? Pizza_2_ViewController
+        
+        vc?.namePz = arrayPizzaName[indexPath.row]
+        vc?.imagePz = UIImage(named: arrayPizzaName[indexPath.row])!
+        
+        
+        self.navigationController?.pushViewController(vc!, animated: true)
     }
     
 }

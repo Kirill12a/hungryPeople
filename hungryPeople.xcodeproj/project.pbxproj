@@ -9,7 +9,13 @@
 /* Begin PBXBuildFile section */
 		7880DF278DCC46076F1BC6CE /* Pods_hungryPeople.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80152C290B98CEB3E90D2067 /* Pods_hungryPeople.framework */; };
 		D2167FA2261F7FF800331E1C /* MenyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2167FA1261F7FF800331E1C /* MenyViewController.swift */; };
+		D2348F72262746AC002B1D27 /* DesertMenuCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2348F71262746AC002B1D27 /* DesertMenuCollectionViewController.swift */; };
+		D2348F752627470C002B1D27 /* DesertMenyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2348F742627470C002B1D27 /* DesertMenyCollectionViewCell.swift */; };
 		D23EDF94261E538A000A5776 /* ReserveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23EDF93261E538A000A5776 /* ReserveViewController.swift */; };
+		D2597C572626061D00B33170 /* Soupe2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2597C562626061D00B33170 /* Soupe2ViewController.swift */; };
+		D2597C5A26261B5F00B33170 /* Pizza_2_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2597C5926261B5F00B33170 /* Pizza_2_ViewController.swift */; };
+		D2597C5D26262EAB00B33170 /* DrinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2597C5C26262EAB00B33170 /* DrinksViewController.swift */; };
+		D2597C60262633A900B33170 /* PastaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2597C5F262633A900B33170 /* PastaViewController.swift */; };
 		D2655090261CF14400994C4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D265508F261CF14400994C4F /* AppDelegate.swift */; };
 		D2655092261CF14400994C4F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2655091261CF14400994C4F /* SceneDelegate.swift */; };
 		D2655094261CF14400994C4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2655093261CF14400994C4F /* ViewController.swift */; };
@@ -24,8 +30,6 @@
 		D2F0A11A26220D99005D8B1B /* DrinksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0A11926220D99005D8B1B /* DrinksCollectionViewCell.swift */; };
 		D2F0A11D26223B82005D8B1B /* PastaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0A11C26223B82005D8B1B /* PastaCollectionViewCell.swift */; };
 		D2F0A12026223B90005D8B1B /* PastaCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0A11F26223B90005D8B1B /* PastaCollectionViewController.swift */; };
-		D2F0A12326224804005D8B1B /* DesertCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0A12226224804005D8B1B /* DesertCollectionViewController.swift */; };
-		D2F0A1262622484F005D8B1B /* DesertCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0A1252622484F005D8B1B /* DesertCollectionViewCell.swift */; };
 		D2F0A12E26235748005D8B1B /* MapViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0A12D26235748005D8B1B /* MapViewViewController.swift */; };
 		D2F0A131262395B0005D8B1B /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0A130262395B0005D8B1B /* ContactViewController.swift */; };
 		D2F0A1342623995E005D8B1B /* SendData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0A1332623995E005D8B1B /* SendData.swift */; };
@@ -35,7 +39,13 @@
 		80152C290B98CEB3E90D2067 /* Pods_hungryPeople.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hungryPeople.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6A9341CF168D17AAAE664A1 /* Pods-hungryPeople.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hungryPeople.debug.xcconfig"; path = "Target Support Files/Pods-hungryPeople/Pods-hungryPeople.debug.xcconfig"; sourceTree = "<group>"; };
 		D2167FA1261F7FF800331E1C /* MenyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenyViewController.swift; sourceTree = "<group>"; };
+		D2348F71262746AC002B1D27 /* DesertMenuCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesertMenuCollectionViewController.swift; sourceTree = "<group>"; };
+		D2348F742627470C002B1D27 /* DesertMenyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesertMenyCollectionViewCell.swift; sourceTree = "<group>"; };
 		D23EDF93261E538A000A5776 /* ReserveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveViewController.swift; sourceTree = "<group>"; };
+		D2597C562626061D00B33170 /* Soupe2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Soupe2ViewController.swift; sourceTree = "<group>"; };
+		D2597C5926261B5F00B33170 /* Pizza_2_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza_2_ViewController.swift; sourceTree = "<group>"; };
+		D2597C5C26262EAB00B33170 /* DrinksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksViewController.swift; sourceTree = "<group>"; };
+		D2597C5F262633A900B33170 /* PastaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastaViewController.swift; sourceTree = "<group>"; };
 		D265508C261CF14400994C4F /* hungryPeople.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hungryPeople.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D265508F261CF14400994C4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2655091261CF14400994C4F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,8 +62,6 @@
 		D2F0A11926220D99005D8B1B /* DrinksCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksCollectionViewCell.swift; sourceTree = "<group>"; };
 		D2F0A11C26223B82005D8B1B /* PastaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastaCollectionViewCell.swift; sourceTree = "<group>"; };
 		D2F0A11F26223B90005D8B1B /* PastaCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastaCollectionViewController.swift; sourceTree = "<group>"; };
-		D2F0A12226224804005D8B1B /* DesertCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesertCollectionViewController.swift; sourceTree = "<group>"; };
-		D2F0A1252622484F005D8B1B /* DesertCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesertCollectionViewCell.swift; sourceTree = "<group>"; };
 		D2F0A12D26235748005D8B1B /* MapViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewViewController.swift; sourceTree = "<group>"; };
 		D2F0A130262395B0005D8B1B /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		D2F0A1332623995E005D8B1B /* SendData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendData.swift; sourceTree = "<group>"; };
@@ -94,6 +102,7 @@
 			children = (
 				D2F0A10A2620DFBD005D8B1B /* SoupeCollectionViewController.swift */,
 				D2F0A10D2620DFED005D8B1B /* SoupeCollectionViewCell.swift */,
+				D2597C562626061D00B33170 /* Soupe2ViewController.swift */,
 			);
 			path = Soupe;
 			sourceTree = "<group>";
@@ -103,6 +112,7 @@
 			children = (
 				D2F0A1102620F93E005D8B1B /* PizzaCollectionViewCell.swift */,
 				D2F0A1132620F94D005D8B1B /* PizzaCollectionViewController.swift */,
+				D2597C5926261B5F00B33170 /* Pizza_2_ViewController.swift */,
 			);
 			path = Pizza;
 			sourceTree = "<group>";
@@ -111,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				D2F0A11626220D8C005D8B1B /* DrinksCollectionViewController.swift */,
+				D2597C5C26262EAB00B33170 /* DrinksViewController.swift */,
 				D2F0A11926220D99005D8B1B /* DrinksCollectionViewCell.swift */,
 			);
 			path = Drinks;
@@ -121,6 +132,7 @@
 			children = (
 				D2F0A11C26223B82005D8B1B /* PastaCollectionViewCell.swift */,
 				D2F0A11F26223B90005D8B1B /* PastaCollectionViewController.swift */,
+				D2597C5F262633A900B33170 /* PastaViewController.swift */,
 			);
 			path = Pasta;
 			sourceTree = "<group>";
@@ -128,8 +140,8 @@
 		D2167FAC261FA3FC00331E1C /* Desert */ = {
 			isa = PBXGroup;
 			children = (
-				D2F0A12226224804005D8B1B /* DesertCollectionViewController.swift */,
-				D2F0A1252622484F005D8B1B /* DesertCollectionViewCell.swift */,
+				D2348F71262746AC002B1D27 /* DesertMenuCollectionViewController.swift */,
+				D2348F742627470C002B1D27 /* DesertMenyCollectionViewCell.swift */,
 			);
 			path = Desert;
 			sourceTree = "<group>";
@@ -356,17 +368,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2597C5D26262EAB00B33170 /* DrinksViewController.swift in Sources */,
 				D2167FA2261F7FF800331E1C /* MenyViewController.swift in Sources */,
 				D2F0A10B2620DFBD005D8B1B /* SoupeCollectionViewController.swift in Sources */,
 				D2F0A12026223B90005D8B1B /* PastaCollectionViewController.swift in Sources */,
 				D2F0A131262395B0005D8B1B /* ContactViewController.swift in Sources */,
-				D2F0A12326224804005D8B1B /* DesertCollectionViewController.swift in Sources */,
+				D2597C572626061D00B33170 /* Soupe2ViewController.swift in Sources */,
 				D2655094261CF14400994C4F /* ViewController.swift in Sources */,
+				D2597C60262633A900B33170 /* PastaViewController.swift in Sources */,
+				D2348F72262746AC002B1D27 /* DesertMenuCollectionViewController.swift in Sources */,
 				D2F0A1142620F94D005D8B1B /* PizzaCollectionViewController.swift in Sources */,
 				D2F0A1342623995E005D8B1B /* SendData.swift in Sources */,
-				D2F0A1262622484F005D8B1B /* DesertCollectionViewCell.swift in Sources */,
 				D23EDF94261E538A000A5776 /* ReserveViewController.swift in Sources */,
+				D2348F752627470C002B1D27 /* DesertMenyCollectionViewCell.swift in Sources */,
 				D2655090261CF14400994C4F /* AppDelegate.swift in Sources */,
+				D2597C5A26261B5F00B33170 /* Pizza_2_ViewController.swift in Sources */,
 				D2F0A1112620F93E005D8B1B /* PizzaCollectionViewCell.swift in Sources */,
 				D2655092261CF14400994C4F /* SceneDelegate.swift in Sources */,
 				D2F0A11D26223B82005D8B1B /* PastaCollectionViewCell.swift in Sources */,

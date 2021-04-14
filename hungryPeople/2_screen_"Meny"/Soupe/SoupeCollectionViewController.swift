@@ -12,27 +12,11 @@ class SoupeCollectionViewController: UICollectionViewController {
     //MARK: Arrays
     
     var arrayProductPrice = ["123","543","214","542","1652","1632","123","643","124","521","621","731"]
-    var arrayProductName = ["Том Ям","Мисо-широ","Том Кха","Бульен","Салянка","Щи","Окрошка","Харчо","Лесной","Дневной","Веган","Постный"]
+    var arrayProductName = ["Том Ям","Мисо-широ","Том Ям","Том Ям","Мисо-широ","Мисо-широ","Мисо-широ","Мисо-широ","Том Ям","Том Ям","Том Ям","Том Ям"]
     
-    var arrayProductImage = [UIImage(named: "Tom"),
-                             UIImage(named: "Misso"),
-                             UIImage(named: "bull"),
-                             UIImage(named: "Tom"),
-                             UIImage(named: "Misso"),
-                             UIImage(named: "Tom"),
-                             UIImage(named: "Tom"),
-                             UIImage(named: "Misso"),
-                             UIImage(named: "bull"),
-                             UIImage(named: "Tom"),
-                             UIImage(named: "Misso"),
-                             UIImage(named: "bull")]
+
     
-    
-    
-    
-    
-    
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -61,9 +45,9 @@ class SoupeCollectionViewController: UICollectionViewController {
         
         cell.SoupePrice.text = arrayProductPrice[indexPath.row] + "₽"
         cell.SoupeName.text = arrayProductName[indexPath.row]
-        cell.SoupeImage.image = arrayProductImage[indexPath.row]
+        cell.SoupeImage.image = UIImage(named: arrayProductName[indexPath.row])
         
-        //MARK:- Настройка внешности ячейки
+        //MARK:- Настройка внешности ячейки 
         
         cell.content.layer.borderWidth = 3
         cell.content.layer.borderColor = UIColor.black.cgColor
@@ -74,7 +58,16 @@ class SoupeCollectionViewController: UICollectionViewController {
     
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+
+        let vc = storyboard?.instantiateViewController(identifier: "Soupe2ViewController") as? Soupe2ViewController
+        vc?.image = UIImage(named: arrayProductName[indexPath.row])!
+        vc?.name = arrayProductName[indexPath.row]
         print(arrayProductName[indexPath.row] + " вы добавили в корзину")
+        
+        self.navigationController?.pushViewController(vc!, animated: true)
+     
+        
     }
     
     
