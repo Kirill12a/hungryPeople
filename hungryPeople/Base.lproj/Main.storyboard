@@ -593,16 +593,34 @@
             </objects>
             <point key="canvasLocation" x="2197" y="2634"/>
         </scene>
-        <!--View Controller-->
+        <!--DesertVC Meny View Controller-->
         <scene sceneID="qzC-ge-h12">
             <objects>
-                <viewController id="Fep-cE-QVc" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DesertVCMenyViewController" id="Fep-cE-QVc" customClass="DesertVCMenyViewController" customModule="hungryPeople" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lyp-l4-1Te">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l88-bB-lo7">
+                                <rect key="frame" x="186" y="115" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E0Y-2b-YUC">
+                                <rect key="frame" x="87" y="224" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Krf-TT-31Y"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="NYo-tJ-rcD"/>
+                    <connections>
+                        <outlet property="DeserImageDelegate" destination="E0Y-2b-YUC" id="cm1-u7-T0n"/>
+                        <outlet property="DesetrDelegateText" destination="l88-bB-lo7" id="aDh-CX-XLR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AGd-nL-uQu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -917,6 +935,9 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="N2e-vz-Pkj"/>
+                    <connections>
+                        <segue destination="Fep-cE-QVc" kind="show" id="vFR-74-kr3"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7gk-1S-oIr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

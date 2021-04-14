@@ -11,6 +11,7 @@
 		D2167FA2261F7FF800331E1C /* MenyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2167FA1261F7FF800331E1C /* MenyViewController.swift */; };
 		D2348F72262746AC002B1D27 /* DesertMenuCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2348F71262746AC002B1D27 /* DesertMenuCollectionViewController.swift */; };
 		D2348F752627470C002B1D27 /* DesertMenyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2348F742627470C002B1D27 /* DesertMenyCollectionViewCell.swift */; };
+		D2348F7826274A52002B1D27 /* DesertVCMenyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2348F7726274A52002B1D27 /* DesertVCMenyViewController.swift */; };
 		D23EDF94261E538A000A5776 /* ReserveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23EDF93261E538A000A5776 /* ReserveViewController.swift */; };
 		D2597C572626061D00B33170 /* Soupe2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2597C562626061D00B33170 /* Soupe2ViewController.swift */; };
 		D2597C5A26261B5F00B33170 /* Pizza_2_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2597C5926261B5F00B33170 /* Pizza_2_ViewController.swift */; };
@@ -41,6 +42,7 @@
 		D2167FA1261F7FF800331E1C /* MenyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenyViewController.swift; sourceTree = "<group>"; };
 		D2348F71262746AC002B1D27 /* DesertMenuCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesertMenuCollectionViewController.swift; sourceTree = "<group>"; };
 		D2348F742627470C002B1D27 /* DesertMenyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesertMenyCollectionViewCell.swift; sourceTree = "<group>"; };
+		D2348F7726274A52002B1D27 /* DesertVCMenyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesertVCMenyViewController.swift; sourceTree = "<group>"; };
 		D23EDF93261E538A000A5776 /* ReserveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveViewController.swift; sourceTree = "<group>"; };
 		D2597C562626061D00B33170 /* Soupe2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Soupe2ViewController.swift; sourceTree = "<group>"; };
 		D2597C5926261B5F00B33170 /* Pizza_2_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza_2_ViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				D2348F71262746AC002B1D27 /* DesertMenuCollectionViewController.swift */,
+				D2348F7726274A52002B1D27 /* DesertVCMenyViewController.swift */,
 				D2348F742627470C002B1D27 /* DesertMenyCollectionViewCell.swift */,
 			);
 			path = Desert;
@@ -368,6 +371,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2348F7826274A52002B1D27 /* DesertVCMenyViewController.swift in Sources */,
 				D2597C5D26262EAB00B33170 /* DrinksViewController.swift in Sources */,
 				D2167FA2261F7FF800331E1C /* MenyViewController.swift in Sources */,
 				D2F0A10B2620DFBD005D8B1B /* SoupeCollectionViewController.swift in Sources */,

@@ -58,8 +58,11 @@ class DesertMenuCollectionViewController: UICollectionViewController {
     
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("ge")
-//        let vc = storyboard?.instantiateViewController(identifier: <#T##String#>)
+//        print("ge")
+       let vcDES = storyboard?.instantiateViewController(identifier: "DesertVCMenyViewController") as? DesertVCMenyViewController
+        vcDES?.desertNAme = arrayDesert[indexPath.row]
+        vcDES?.imageDesert =  UIImage(named: arrayDesert[indexPath.row])!
+        self.navigationController?.pushViewController(vcDES!, animated: true)
     }
 
     
