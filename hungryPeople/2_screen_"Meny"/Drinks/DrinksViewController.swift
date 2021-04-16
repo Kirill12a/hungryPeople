@@ -11,6 +11,7 @@ class DrinksViewController: UIViewController {
 
     @IBOutlet weak var DrinksOutlet: UILabel!
     @IBOutlet weak var ImageDrinks: UIImageView!
+    @IBOutlet weak var DrinksButton: UIButton!
     
     var iamgeDR = UIImage()
     var nameDrinks = ""
@@ -22,7 +23,10 @@ class DrinksViewController: UIViewController {
         ImageDrinks.image = iamgeDR
     }
     
-
+    @IBAction func ADDTresh(_ sender: Any) {
+        print("ты добавил в коризну \(DrinksOutlet.text!)")
+    }
+    
    
 
 }

@@ -11,6 +11,7 @@ class Pizza_2_ViewController: UIViewController {
 
     @IBOutlet weak var Pizza_2_Label: UILabel!
     @IBOutlet weak var Pizza_2_Image: UIImageView!
+    @IBOutlet weak var Pizza_2_Button: UIButton!
     
     
     var namePz = ""
@@ -25,6 +26,9 @@ class Pizza_2_ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func ButtonPushDataTrash(_ sender: Any) {
+        print("ты добавил \(Pizza_2_Label.text!) в корзину")
+    }
+    
    
 }

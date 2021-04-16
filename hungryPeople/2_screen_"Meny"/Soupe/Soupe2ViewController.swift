@@ -11,6 +11,9 @@ class Soupe2ViewController: UIViewController {
 
     @IBOutlet weak var Soupe_2_Vc: UILabel!
     @IBOutlet weak var Soupe_2_Image: UIImageView!
+    @IBOutlet weak var Soupe_2_AddBusket: UIButton!
+    //пока не юзается
+    @IBOutlet weak var Description: UILabel!
     
     
     
@@ -21,9 +24,13 @@ class Soupe2ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        Soupe_2_Vc.text = " Ты выбрал \(name)"
+        Soupe_2_Vc.text = "выбрал \(name)"
         Soupe_2_Image.image = image
         
     }
-  
+    
+    @IBAction func addBusketAction(_ sender: Any) {
+        print("Круто ты добавил корзину товар под именем \(Soupe_2_Vc.text!)")
+    }
+    
 }

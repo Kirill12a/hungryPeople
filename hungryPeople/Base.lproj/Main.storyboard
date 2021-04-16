@@ -480,17 +480,29 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLq-Y5-zxF">
-                                <rect key="frame" x="136" y="600" width="143" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLq-Y5-zxF">
+                                <rect key="frame" x="175" y="658" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Добавить в корзину"/>
+                                <state key="normal" image="tresh"/>
+                                <connections>
+                                    <action selector="addBusketAction:" destination="jHa-2x-pcX" eventType="touchUpInside" id="uj8-u1-YhV"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Энегетическая ценность равна 34  кл" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f78-d2-zdb">
+                                <rect key="frame" x="69" y="493" width="303" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="50q-kF-nlQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Edf-Hh-hG8"/>
                     <connections>
+                        <outlet property="Description" destination="f78-d2-zdb" id="WCX-V2-G6T"/>
+                        <outlet property="Soupe_2_AddBusket" destination="OLq-Y5-zxF" id="zZK-GH-Tn1"/>
                         <outlet property="Soupe_2_Image" destination="HKj-S0-dhv" id="auN-zS-mLR"/>
                         <outlet property="Soupe_2_Vc" destination="kyz-Cv-ocU" id="wd7-Ym-tAH"/>
                     </connections>
@@ -518,12 +530,21 @@
                                 <rect key="frame" x="43" y="219" width="334" height="223"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqw-8u-VCk">
+                                <rect key="frame" x="175" y="594" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="tresh"/>
+                                <connections>
+                                    <action selector="ButtonPushDataTrash:" destination="Zk5-IT-3KJ" eventType="touchUpInside" id="KjD-74-ZwD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qlR-Wf-EMu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="NNV-JY-gfK"/>
                     <connections>
+                        <outlet property="Pizza_2_Button" destination="hqw-8u-VCk" id="LeI-Ru-jYq"/>
                         <outlet property="Pizza_2_Image" destination="Xlx-Dn-FCj" id="jWW-Gh-Xx9"/>
                         <outlet property="Pizza_2_Label" destination="F9H-eZ-bIF" id="TYQ-4B-Llv"/>
                     </connections>
@@ -551,12 +572,21 @@
                                 <rect key="frame" x="53" y="218" width="319" height="221"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEI-1J-J7z">
+                                <rect key="frame" x="175" y="578" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="tresh"/>
+                                <connections>
+                                    <action selector="ADDTresh:" destination="tgv-qR-Nes" eventType="touchUpInside" id="Bge-XP-XKR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NZj-Bi-Rw9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="PI3-xz-Kqb"/>
                     <connections>
+                        <outlet property="DrinksButton" destination="xEI-1J-J7z" id="Zu4-gM-gcf"/>
                         <outlet property="DrinksOutlet" destination="DDq-V3-Kmf" id="GJK-ya-Bfs"/>
                         <outlet property="ImageDrinks" destination="g6Z-gn-yIm" id="wTQ-Oz-zC8"/>
                     </connections>
@@ -584,12 +614,21 @@
                                 <rect key="frame" x="20" y="218" width="374" height="211"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wps-ML-ZhP">
+                                <rect key="frame" x="175" y="513" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="tresh"/>
+                                <connections>
+                                    <action selector="AddTreshPasta:" destination="UMv-dV-faj" eventType="touchUpInside" id="9Qd-9W-bix"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oQ7-D8-m4Y"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="aLT-2q-eHb"/>
                     <connections>
+                        <outlet property="PastaButton" destination="Wps-ML-ZhP" id="z5x-B7-dmR"/>
                         <outlet property="PastaImage" destination="9km-V2-tfE" id="Gyz-HZ-xhF"/>
                         <outlet property="PastaLabel" destination="ORh-hK-QuX" id="4iu-p2-Gh0"/>
                     </connections>
@@ -617,6 +656,14 @@
                                 <rect key="frame" x="20" y="222" width="374" height="206"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKr-4z-iDI">
+                                <rect key="frame" x="175" y="505" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="tresh"/>
+                                <connections>
+                                    <action selector="DesertPushTresh:" destination="Fep-cE-QVc" eventType="touchUpInside" id="Nag-Xi-urW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Krf-TT-31Y"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -624,6 +671,7 @@
                     <navigationItem key="navigationItem" id="NYo-tJ-rcD"/>
                     <connections>
                         <outlet property="DeserImageDelegate" destination="E0Y-2b-YUC" id="cm1-u7-T0n"/>
+                        <outlet property="DesertButton" destination="mKr-4z-iDI" id="7WZ-7i-1ie"/>
                         <outlet property="DesetrDelegateText" destination="l88-bB-lo7" id="aDh-CX-XLR"/>
                     </connections>
                 </viewController>

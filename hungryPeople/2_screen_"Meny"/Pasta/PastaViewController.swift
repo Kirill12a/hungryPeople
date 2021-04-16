@@ -11,6 +11,7 @@ class PastaViewController: UIViewController {
 
     @IBOutlet weak var PastaLabel: UILabel!
     @IBOutlet weak var PastaImage: UIImageView!
+    @IBOutlet weak var PastaButton: UIButton!
     
     var PIZName = ""
     var PIZImage = UIImage()
@@ -22,6 +23,9 @@ class PastaViewController: UIViewController {
         PastaImage.image = PIZImage
     }
     
-
+    @IBAction func AddTreshPasta(_ sender: Any) {
+        print("ты добавил в корзину \(PastaLabel.text!)")
+    }
+    
 
 }

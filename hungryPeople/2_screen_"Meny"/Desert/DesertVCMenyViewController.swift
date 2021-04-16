@@ -11,7 +11,8 @@ class DesertVCMenyViewController: UIViewController {
 
     @IBOutlet weak var DesetrDelegateText: UILabel!
     @IBOutlet weak var DeserImageDelegate: UIImageView!
-   
+    @IBOutlet weak var DesertButton: UIButton!
+    
     
     var desertNAme = ""
     var imageDesert = UIImage()
@@ -23,6 +24,9 @@ class DesertVCMenyViewController: UIViewController {
 
     }
     
-
+    @IBAction func DesertPushTresh(_ sender: Any) {
+        print("ты добавил в коризну товар \(DesetrDelegateText.text!)")
+    }
+    
 
 }
