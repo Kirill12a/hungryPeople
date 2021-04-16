@@ -43,7 +43,7 @@ buttonSettingsView(button: SendDataOutlet)
     @IBAction func SendDataAction(_ sender: Any) {
         var userArraSend = [String]()
         
-        
+       
         
         print("\(NameTF.text!), \(EmailTF.text!), \(PhoneTF.text!), \(MessageTF.text!)")
         

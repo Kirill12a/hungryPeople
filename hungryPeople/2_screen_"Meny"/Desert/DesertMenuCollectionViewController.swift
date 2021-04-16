@@ -47,9 +47,9 @@ class DesertMenuCollectionViewController: UICollectionViewController {
         cell.DesertOmage.image = UIImage(named: arrayDesert[indexPath.row])
         cell.PriceDesert.text = arrayPrice[indexPath.row]
         
-        cell.DessertView.layer.borderWidth = 3
+        cell.DessertView.layer.borderWidth = 4
         cell.DessertView.layer.borderColor = UIColor.black.cgColor
-        cell.DessertView.layer.cornerRadius = 13
+        cell.DessertView.layer.cornerRadius = 12
     
         // Configure the cell
     
