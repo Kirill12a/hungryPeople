@@ -1,7 +1,4 @@
-//
-//  DesertVCMenyViewController.swift
-//  hungryPeople
-//
+
 //  Created by Kirill Drozdov on 14.04.2021.
 //
 

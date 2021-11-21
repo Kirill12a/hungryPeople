@@ -1,7 +1,4 @@
-//
-//  MenyViewController.swift
-//  hungryPeople
-//
+
 //  Created by Kirill Drozdov on 08.04.2021.
 //
 

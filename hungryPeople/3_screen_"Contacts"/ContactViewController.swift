@@ -1,7 +1,4 @@
-//
-//  ContactViewController.swift
-//  hungryPeople
-//
+
 //  Created by Kirill Drozdov on 11.04.2021.
 //
 

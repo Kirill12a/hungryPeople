@@ -1,7 +1,4 @@
-//
-//  PizzaCollectionViewController.swift
-//  hungryPeople
-//
+
 //  Created by Kirill Drozdov on 10.04.2021.
 //
 

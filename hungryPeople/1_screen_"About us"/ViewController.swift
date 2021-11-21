@@ -1,7 +1,4 @@
-//
-//  ViewController.swift
-//  hungryPeople
-//
+
 //  Created by Kirill Drozdov on 06.04.2021.
 //
 

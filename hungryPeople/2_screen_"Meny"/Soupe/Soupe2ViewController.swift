@@ -1,7 +1,4 @@
-//
-//  Soupe2ViewController.swift
-//  hungryPeople
-//
+
 //  Created by Kirill Drozdov on 13.04.2021.
 //
 

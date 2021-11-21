@@ -1,7 +1,4 @@
-//
-//  SoupeCollectionViewCell.swift
-//  hungryPeople
-//
+
 //  Created by Kirill Drozdov on 09.04.2021.
 //
 

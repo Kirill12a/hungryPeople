@@ -1,7 +1,4 @@
-//
-//  ReserveViewController.swift
-//  hungryPeople
-//
+
 //  Created by Kirill Drozdov on 07.04.2021.
 //
 
